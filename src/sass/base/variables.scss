@@ -1,0 +1,53 @@
+// Color map
+$colors: (
+  primary: #ffffff,
+  secondary: #1ab798,
+  primary-text: #282528,
+  secondary-text: #cccbcc,
+  pramary-transparency: rgba(255, 255, 255, 0.502),
+  pseudo-element-line: #535b64,
+  quotes-element: #efefef,
+  heading-video: #222222,
+  primary-team: #0eb493,
+  btn-round-video: #0098cd,
+  // video-bg-color: #31d4e7,
+    // video-foto-play-bg-color: #2a2929,
+    // video-foto-line-color: #00adef,
+    // video-foto-line-next-color: #666666,
+    bg-icon-team: #000000,
+  foto-name: #062033,
+  // foto-professional-transparency: rgba(6, 32, 51, 0.561),
+    border-color-imeg: #c4c7c7,
+  contact-btn-bg-color: #31d4e7,
+  contact-btn-fb-color: #3b5997,
+  contact-btn-tw-color: #3ec2f3,
+  contact-btn-in-color: #007ab9,
+  contact-info-color: #bface2,
+  contact-form-color: #c1c1c1,
+);
+
+//media
+$mobile-max-width-container: 320px;
+$mobile-padding-container: 15px;
+$tablet-max-width-container: 768px;
+$tablet-padding-container: 30px;
+$desktop-max-width-container: 1200px;
+$desktop-padding-container: 40px;
+
+// Font weight
+$primary-font-stack: 'OpenSans';
+$secondary-font-stack: 'Raleway';
+
+// Font weight
+$regular-font-size: 400;
+$semibold-font-size: 600;
+$bold-font-size: 700;
+
+// Font size
+
+$headings-size: 18px;
+$headings-size-big: 28px;
+$paragraph-size: 16px;
+$discription-size: 13px;
+$info-size: 14px;
+$info-headings-size: 24px;

@@ -1,0 +1,38 @@
+// Импортируем базовые файлы
+@import 'base/variables';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/placeholders';
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/animation.scss';
+
+// // Импортируем компоненты
+@import 'components/contact/contact-wrap.scss';
+@import 'components/contact/contact-text.scss';
+@import 'components/contact/form.scss';
+@import 'components/contact/contact.scss';
+@import 'components/contact/icon-form.scss';
+@import 'components/video/icon.scss';
+@import 'components/contact/namber.scss';
+@import 'components/video/video.scss';
+@import 'components/video/watch.scss';
+@import 'components/contact/btnn.scss';
+// @import 'components/fix.scss';
+@import 'components/banner/burger2';
+@import 'components/banner/menu';
+// @import 'components/btn';
+@import 'components/logo';
+@import 'components/nav__list';
+@import 'components/section-description';
+@import 'components/icon.scss';
+@import 'components/team.scss';
+@import 'components/slaider.scss';
+
+// // Импортируем слои документа
+@import 'layout/common';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/banner';

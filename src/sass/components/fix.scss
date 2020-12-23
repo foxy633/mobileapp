@@ -1,0 +1,15 @@
+.section-discription .fix::after {
+  content: '';
+  @media (max-width: 767px) {
+    content: none;
+  }
+}
+
+.section-discription .fix br {
+  @extend %decor;
+  display: none;
+  @media (max-width: 767px) {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}

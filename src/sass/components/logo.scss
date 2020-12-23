@@ -1,0 +1,7 @@
+.logo {
+  @extend %linkreset;
+  font-family: $secondary-font-stack;
+  font-weight: $semibold-font-size;
+  font-size: 22px;
+  color: color(secondary);
+}

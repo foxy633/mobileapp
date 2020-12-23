@@ -1,0 +1,15 @@
+.contact__wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-top: 40px;
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: inherit;
+    align-items: baseline;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+}

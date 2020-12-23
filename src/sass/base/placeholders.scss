@@ -1,0 +1,44 @@
+// List reset
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Link reset
+%linkreset {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+// Transition
+%transition {
+  transition: all 200ms linear;
+}
+
+// Bg Cover
+%bgCover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// AbsoluteCover
+%absoluteCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+//decor from section discription heading
+%decor {
+  @include pseudo;
+  background-color: color(pseudo-element-line);
+  width: 60px;
+  height: 1px;
+  // margin-bottom: 7px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+}

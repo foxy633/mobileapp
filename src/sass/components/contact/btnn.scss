@@ -1,0 +1,19 @@
+.btn {
+  @include center-flex($type: 'all');
+  @media (min-width: 1200px) {
+    justify-content: flex-end;
+  }
+}
+
+button[type='submit'] {
+  font-family: $primary-font-stack;
+  font-size: 22px;
+  font-weight: $regular-font-size;
+  height: 50px;
+  width: 170px;
+  color: color(primary);
+  background-color: color(contact-btn-bg-color);
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+.contact-forma {
+  @include between-flex($type: 'hor');
+
+  & * {
+    z-index: 1;
+  }
+}
+.contact-forma fieldset {
+  border: none;
+}
+
+.form {
+  &__row {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: inherit;
+      justify-content: space-between;
+    }
+  }
+}
+
+input[type='text'],
+input[type='email'] {
+  font-family: $primary-font-stack;
+  font-weight: $regular-font-size;
+  height: 45px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: 1px solid color(contact-form-color);
+  border-radius: 4px;
+  background: color(primary);
+  color: color(bg-icon-team);
+  width: 49%;
+  padding-left: 20px;
+  min-width: 270px;
+}
+textarea {
+  font-family: $primary-font-stack;
+  font-weight: $regular-font-size;
+  height: 180px;
+  padding: 25px 1px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: 1px solid color(contact-form-color);
+  border-radius: 4px;
+  background: color(primary);
+  color: color(bg-icon-team);
+  width: 270px;
+  padding-left: 20px;
+  resize: none;
+  overflow: auto;
+  vertical-align: top;
+  @media (min-width: 768px) {
+    width: 570px;
+  }
+}
+input[type='text']::-webkit-input-placeholder,
+input[type='email']::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: color(contact-form-color);
+}
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  border-color: blue;
+}
+
+input:invalid:focus {
+  border-color: red;
+}
+
+input:valid:focus {
+  border-color: green;
+}

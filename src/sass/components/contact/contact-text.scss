@@ -1,0 +1,40 @@
+.contact-text {
+  @include center-flex($type: 'all');
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 40px;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    width: 420px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  &__subtitl {
+    padding-bottom: 40px;
+  }
+  &__sub {
+    font-family: $secondary-font-stack;
+    font-size: $info-headings-size;
+    font-weight: $regular-font-size;
+    color: color(primary);
+    padding-bottom: 20px;
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+  &__text {
+    font-family: $primary-font-stack;
+    font-size: $info-size;
+    font-weight: $regular-font-size;
+    color: color(primary);
+    opacity: 0.5;
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+}

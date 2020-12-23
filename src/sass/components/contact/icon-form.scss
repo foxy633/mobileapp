@@ -1,0 +1,38 @@
+.icon-form {
+  display: flex;
+  max-width: 160px;
+  height: 50px;
+
+  & svg {
+    height: 20px;
+  }
+}
+.icon-form__facebook {
+  @include center-flex($type: 'all');
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: color(contact-btn-fb-color);
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.icon-form__twitter {
+  @include center-flex($type: 'all');
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: color(contact-btn-tw-color);
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.icon-form__linkedin {
+  @include center-flex($type: 'all');
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: color(contact-btn-in-color);
+  border-radius: 50%;
+  cursor: pointer;
+}

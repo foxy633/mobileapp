@@ -1,0 +1,56 @@
+.icon-list {
+  @include between-flex($type: 'all');
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
+  @media (min-width: 1200px) {
+    background-image: url(../images/foto/screen-min.png);
+    @include icon;
+    background-position: center;
+    margin-top: 80px;
+    height: 790px;
+    margin-bottom: -50px;
+  }
+
+  &__discription {
+    flex: 0 0 290px;
+    padding-left: 60px;
+    padding-top: 40px;
+    position: relative;
+    text-align: left;
+
+    &:hover .icon-list-key {
+      transform: rotate(360deg);
+    }
+    @media (min-width: 1200px) {
+      &:nth-child(odd) {
+        margin-right: 200px;
+      }
+    }
+  }
+
+  &__heading {
+    font-family: $primary-font-stack;
+    font-weight: $bold-font-size;
+    font-size: $headings-size;
+    color: color(primary-text);
+    padding-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-family: $secondary-font-stack;
+    font-weight: $regular-font-size;
+    font-size: $discription-size;
+    color: color(primary-text);
+  }
+
+  &-key {
+    fill: color(secondary);
+    position: absolute;
+    left: 0px;
+
+    transition-duration: 1s;
+    transition-property: transform;
+    transition-timing-function: ease-in;
+  }
+}

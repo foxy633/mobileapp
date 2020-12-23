@@ -1,0 +1,61 @@
+@mixin font-settings($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin pseudo($display: inline-block, $content: '') {
+  display: $display;
+  content: $content;
+}
+
+@mixin bg-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: $path;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
+
+@mixin icon($size: contain, $repeat: no-repeat, $pos: left) {
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
+
+@mixin center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+@mixin column-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    flex-direction: column;
+    align-items: flex-start;
+  } @else if $type== 'hor' {
+    flex-direction: column;
+  } @else if $type== 'ver' {
+    align-items: flex-start;
+  }
+}
+
+@mixin between-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } @else if $type== 'hor' {
+    justify-content: space-between;
+  } @else if $type== 'ver' {
+    flex-wrap: wrap;
+  }
+}

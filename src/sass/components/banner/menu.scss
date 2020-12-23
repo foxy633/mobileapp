@@ -1,0 +1,33 @@
+.menu {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & li {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $primary-font-stack;
+    font-weight: $bold-font-size;
+    @media (min-width: 1400px) {
+      font-size: 13px;
+    }
+  }
+
+  & a {
+    color: rgba(color(primary-text), 0.6);
+
+    &:hover {
+      color: color(primary-text);
+    }
+  }
+}

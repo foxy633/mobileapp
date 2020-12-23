@@ -1,0 +1,37 @@
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer {
+  &__text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    font-family: $primary-font-stack;
+    font-size: $info-size;
+    font-weight: $regular-font-size;
+    color: color(primary);
+    padding-left: 20px;
+    border-top: 1px solid color(primary);
+
+    &-paragraph {
+      @include column-flex($type: 'all');
+    }
+    &-span::before {
+      @include pseudo($content: '\A9');
+      margin-right: 2px;
+    }
+    a {
+      color: color(primary);
+    }
+    @media (min-width: 768px) {
+      &-paragraph {
+        @include column-flex($type: 'ver');
+        flex-direction: inherit;
+      }
+    }
+  }
+}

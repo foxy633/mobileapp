@@ -1,0 +1,38 @@
+.watch__icon {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.icon__apple {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: color(btn-round-video);
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.icon__apple-1,
+.icon__android-1 {
+  width: 30px;
+  height: 35px;
+}
+
+.icon__android {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: color(btn-round-video);
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+}
